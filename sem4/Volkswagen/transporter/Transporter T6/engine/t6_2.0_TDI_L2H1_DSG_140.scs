@@ -1,0 +1,17 @@
+t6_2.0_TDI_L2H1_DSG_140
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[2.0 TDI L2H1 DSG (140 л.с.)](*<-lang_ru;;*);
+			[2.0 TDI L2H1 DSG (140 л.с.)](*<-lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [8.0 л];
+	=>nrel_speed: [166 км/ч];
+	=>nrel_racing: [13.1 c];
+	=>nrel_torque: [340 Н*м];
+	=>nrel_gas: [дизель];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [4];
+	=>transmission: [7x robot];;

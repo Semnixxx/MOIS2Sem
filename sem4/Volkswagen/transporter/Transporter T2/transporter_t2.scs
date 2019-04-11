@@ -1,0 +1,24 @@
+transporter_t2
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[Transporter T2](*<-lang_ru; lang_en;;*);
+	=>nrel_idtf:
+			[T2](*<-lang_ru; lang_en;;*);
+	
+	
+	<-car;
+	
+	=> nrel_brand: Volkswagen;
+	=> nrel_manufacturer: VAG;
+	=> nrel_carcas: minibus;
+	=> nrel_weight: [1325 kg];
+	=> nrel_engine: t2_1.6_MT_47;
+	=> nrel_carrying: [950 kg];
+	=> nrel_period_of_sales: ...
+	(*
+			<-period_of_time;;
+			->rrel_beginning_of_sales: 1967;;
+			->rrel_ending_of_sales: 1970;;
+	*);
+	=> nrel_release_year: [1967];;

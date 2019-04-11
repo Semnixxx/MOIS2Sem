@@ -1,0 +1,66 @@
+carcas
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+[кузов](* <-lang_ru;; *);
+[carcas](* <-lang_en;; *);
+-> rrel_example: ...
+(*
+    => nrel_main_idtf: 
+	[седан](*<- lang_ru;;*);
+	[sedan](*<-lang_en;;*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf: 
+        [Опр. (кузов)] (* <- lang_ru;; *);
+        [Def. (carcas)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example:[Кузов — это часть автомобиля или другого транспортного средства, предназначенная для размещения пассажиров и груза.](*<- lang_ru;;*);;
+	-> rrel_example:[A carcas is a part of a car or other vehicle designed to accommodate passengers and cargo.](*<- lang_en;;*);;
+    *);;
+    <= nrel_using_constants: ...
+    (*
+        -> carcas;;
+        -> car;;
+		-> vehicle;;
+		-> passenger;;
+		-> cargo;;
+    *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        carcas;
+		frame;
+        car
+    };;
+    => nrel_main_idtf: 
+        [Утв.(кузов, рама, автомобиль)] (* <- lang_ru;; *);
+        [Expl.(carcas, frame, car)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Кузов крепится к раме автомобиля.](*<- lang_ru;;*);
+            [The carcas is attached to the frame of the car.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    closed;
+	open
+};
+<=nrel_subdividing:
+{
+	sedan;
+	station_wagon;
+	hatchback;
+	coupe;
+	limousine;
+	roadster;
+	minivan
+};;

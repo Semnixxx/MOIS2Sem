@@ -1,0 +1,54 @@
+ecology
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [экология](* <-lang_ru;; *);
+        [ecology](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [сбор макулатуры](*<- lang_ru;;*);
+            [waste paper collection](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (экология)] (* <- lang_ru;; *);
+            [Def. (ecology)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [экология - наука о взаимодействиях живых организмов и их сообществ между собой и с окружающей средой.](*<- lang_ru;;*);
+                [ecology - the science of the interactions of living organisms and their communities among themselves and with the environment.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->scince;;
+            ->organism;;
+            ->environment;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        ecology;
+		nature;
+		component;
+		environment
+    };;
+    => nrel_main_idtf: 
+        [Утв.(экология, природа, компонент, среда)] (* <- lang_ru;; *);
+        [Expl.(ecology, nature, component, environment)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Экология — познание природы, исследование всех взаимоотношений живого с органическими и неорганическими компонентами окружающей среды.](*<- lang_ru;;*);
+            [Ecology - the knowledge of nature, the study of all relationships of the living with the organic and inorganic components of the environment.](*<- lang_en;;*);;
+    *);;
+*);;

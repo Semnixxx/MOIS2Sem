@@ -1,0 +1,57 @@
+harm
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [вред](* <-lang_ru;; *);
+        [harm](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [ущерб](*<- lang_ru;;*);
+            [damage](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (вред)] (* <- lang_ru;; *);
+            [Def. (harm)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Вред — причинение порчи, ущерба чему, или кому-либо.](*<- lang_ru;;*);
+                [Harm - causing damage to, or to anyone.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->damage;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        harm;
+		influence;
+		impact
+    };;
+    => nrel_main_idtf: 
+        [Утв.(вред, влияние, воздействие)] (* <- lang_ru;; *);
+        [Expl.(harm, influence, impact)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Вред — это негативное влияние, воздействие, которое делает что-либо хуже, чем есть.](*<- lang_ru;;*);
+            [Harm is a negative impact, an impact that makes something worse than it is](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    moral;
+	physical
+};;

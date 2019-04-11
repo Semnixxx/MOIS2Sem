@@ -1,0 +1,58 @@
+inventor
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [изобретатель](* <-lang_ru;; *);
+        [inventor](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [Никола Тесла](*<- lang_ru;;*);
+            [Nikola Tesla](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (изобретатель)] (* <- lang_ru;; *);
+            [Def. (inventor)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Изобретатель — творческий человек или рационализатор, который создаёт новые изобретения, главным образом, технические устройства или методы.](*<- lang_ru;;*);
+                [The inventor is a creative person or innovator who creates new inventions, mainly technical devices or methods.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->device;;
+            ->invention;;
+            ->method;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        inventor;
+		device
+    };;
+    => nrel_main_idtf: 
+        [Утв.(изобретатель, устройство)] (* <- lang_ru;; *);
+        [Expl.(inventor, device)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Часто изобретатели улучшают существующие устройства или комбинируют их для создания новых полезных устройств.](*<- lang_ru;;*);
+            [Often, inventors improve existing devices or combine them to create new useful devices.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    scientist;
+	engineer
+};;

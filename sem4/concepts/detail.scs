@@ -1,0 +1,58 @@
+detail
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [деталь](* <-lang_ru;; *);
+        [detail](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [двигатель];
+            [engine];;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (деталь)] (* <- lang_ru;; *);
+            [Def. (detail)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [деталь - изделие, деталь, являющееся составной частью более крупного изделия, предназначенная для замены находившейся в эксплуатации такой же части с целью ремонта.](*<- lang_ru;;*);
+                [detail is a product, part, which is an integral part of a larger product, intended to replace the same part in operation for the purpose of repair.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->product;;
+            ->repair;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        spare_part;
+		article;
+		designation
+    };;
+    => nrel_main_idtf: 
+        [Утв.(запчасть, артикул, обозначение)] (* <- lang_ru;; *);
+        [Expl.(spare part, article, designation)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Артикул - цифровое или буквенное обозначение запчастей присвоенное производителем.](*<- lang_ru;;*);
+            [Item number - a part number or letter designation assigned by the manufacturer.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    new;
+	used
+};;

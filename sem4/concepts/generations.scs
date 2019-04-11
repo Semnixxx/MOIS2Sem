@@ -1,0 +1,64 @@
+generations
+	<-sc_node_not_relation;
+    => nrel_main_idtf:
+        [поколение](*<-lang_ru;; *);
+        [generations](*<-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [транспортёр](*<- lang_ru;;*);
+            [transporter](*<- lang_en;;*);;
+    *);
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (поколение)] (*<- lang_ru;; *);
+            [Def. (generations)] (*<- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Поколение — общность каких-то объектов по длине цепи непосредственных предков до некоторого родоначальника.](*<- lang_ru;;*);
+                [Generation — a community of some objects along the length of the chain of direct ancestors until some ancestor.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->community;;
+            ->object;;
+            ->chain;;
+			->ancestors;;
+			->ancestor;;
+        *);;
+    *);
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        generation;
+		people;
+		animals;
+		plants;
+		inanimate_objects
+    };;
+    => nrel_main_idtf: 
+        [Утв.(поколение, люди, животные, растения, неодушевлённые предметы)] (*<- lang_ru;; *);
+        [Expl.(generation, people, animals, plants, inanimate objects)] (*<- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Поколение может быть как людей, животных, растений, так и неодушевлённых предметов.](*<- lang_ru;;*);
+            [Generation can be both people, animals, plants, and inanimate objects.](*<- lang_en;;*);;
+    *);;
+*);
+<=nrel_subdividing:
+{
+    lost_generations;
+	gratest_generations;
+	silent_generations;
+	baby_boom_generations;
+	X_generations;
+	Y_generations;
+	Z_generations
+};;

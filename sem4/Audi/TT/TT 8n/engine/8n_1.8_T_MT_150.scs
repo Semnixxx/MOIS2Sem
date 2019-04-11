@@ -1,0 +1,17 @@
+8n_1.8_T_MT_150
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[1.8 T MT (150 л.с.)](*<-lang_ru;;*);
+			[1.8 T MT (150 HP)](*<- lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [8.1 л];
+	=>nrel_speed: [194 км/ч];
+	=>nrel_racing: [8.6 c];
+	=>nrel_torque: [210 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [5];
+	=>transmission: [5x mechanic];;

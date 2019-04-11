@@ -1,0 +1,70 @@
+road
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [дорога](* <-lang_ru;; *);
+        [road](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [трасса](*<- lang_ru;;*);
+            [track](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (дорога)] (* <- lang_ru;; *);
+            [Def. (road)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Дорога - путь сообщения для передвижения людей и транспорта, составная часть транспортной (дорожной) инфраструктуры государства или страны.](*<- lang_ru;;*);
+                [A road is a communication route for the movement of people and transport, an integral part of the transport (road) infrastructure of a state or country.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->way;;
+            ->vehicle;;
+            ->people;;
+			->infrastructure;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        road;
+        speed_limit
+    };;
+    => nrel_main_idtf: 
+        [Утв.(дорога, скоростной режим)] (* <- lang_ru;; *);
+        [Expl.(road, speed limit)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [На большинстве дорог установлен определённый скоростной режим.](*<- lang_ru;;*);
+            [Most roads have a certain speed limit.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    asphalt;
+	forest;
+	ground
+};
+<=nrel_subdividing:
+{
+	main;
+	secondary
+};
+<=nrel_subdividing:
+{
+	toll_road;
+	free_road
+};;

@@ -1,0 +1,10 @@
+nrel_carrying
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+	=> nrel_main_idtf:
+		[грузоподъёмность*](*<-lang_ru;;*);
+		[carrying*](*<-lang_en;;*);;

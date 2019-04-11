@@ -1,0 +1,17 @@
+t1_1.1_MT_25
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[1.1 MT (25 л.с.)](*<-lang_ru;;*);
+			[1.1 MT (25 HP)](*<- lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [9.5 л];
+	=>nrel_speed: [85 км/ч];
+	=>nrel_racing: [29 c];
+	=>nrel_torque: [68 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [2];
+	=>transmission: [4x mechanic];;

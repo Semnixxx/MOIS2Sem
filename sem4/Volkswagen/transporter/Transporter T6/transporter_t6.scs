@@ -1,0 +1,28 @@
+transporter_t6
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[Transporter T6](*<-lang_ru; lang_en;;*);
+	=>nrel_idtf:
+			[T6](*<-lang_ru; lang_en;;*);
+	
+	
+	<-car;
+	
+	=> nrel_brand: Volkswagen;
+	=> nrel_manufacturer: VAG;
+	=> nrel_carcas: minibus;
+	=> nrel_weight: [1965 kg];
+	=> nrel_engine: t6_2.0_TDI_L1H1_MT_102;
+					t6_2.0_TDI_L2H1_DSG_140;
+					t6_2.0_biTDI_DSG_4motion_L1H1_180;
+					t6_2.0_TSI_DSG_L2H1_204;
+					t6_2.0_TSI_DSG_4motion_L2H1_204;
+					t6_2.0_TSI_L2H1_MT_150;
+	=> nrel_period_of_sales: ...
+	(*
+			<-period_of_time;;
+			->rrel_beginning_of_sales: 2015;;
+			->rrel_ending_of_sales: 2019;;
+	*);
+	=> nrel_carrying: [835 kg];;

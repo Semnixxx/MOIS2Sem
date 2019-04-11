@@ -1,0 +1,17 @@
+t5_1.9_TDI_LWB_L2H1_MT_102
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[1.9 TDI LWB L2H1 MT (102 л.с.)](*<-lang_ru;;*);
+			[1.9 TDI LWB L2H1 MT (102 л.с.)](*<-lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [7.6 л];
+	=>nrel_speed: [157 км/ч];
+	=>nrel_racing: [18.9 c];
+	=>nrel_torque: [200 Н*м];
+	=>nrel_gas: [дизель];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [2];
+	=>transmission: [5x mechanic];;

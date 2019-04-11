@@ -1,0 +1,58 @@
+brand
+    <-sc_node_not_relation;
+    => nrel_main_idtf:
+        [марка](*<-lang_ru;; *);
+        [brand](*<-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [ауди](*<- lang_ru;;*);
+            [audi](*<- lang_en;;*);;
+    *);
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (марка)] (*<- lang_ru;; *);
+            [Def. (brand)] (*<- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [марка - обозначение, служащее для индивидуализации товаров юридических лиц или индивидуальных предпринимателей.](*<- lang_ru;;*);
+                [brand - a designation that serves to individualize the goods of legal entities or individual entrepreneurs.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->designation;;
+            ->product;;
+            ->legal_entitie;;
+			->individual_enterprepeneur;;
+        *);;
+    *);
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        brand;
+		freedom;
+		law;
+		certificate
+    };;
+    => nrel_main_idtf: 
+        [Утв.(марка, право, закон, свидетельство)] (*<- lang_ru;; *);
+        [Expl.(brand, freedom, law, certificate)] (*<- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Законом признаётся исключительное право на марку, удостоверяемое свидетельством на марку.](*<- lang_ru;;*);
+            [The law recognizes the exclusive freedom to a brand, certified by a certificate for the brand.](*<- lang_en;;*);;
+    *);;
+*);
+<=nrel_subdividing:
+{
+    verbal;
+	pictorial;
+	combined
+};;

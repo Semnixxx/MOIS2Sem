@@ -1,0 +1,17 @@
+t5_2.0_LWB_L2H3_MT_115
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[2.0 LWB L2H3 MT (115 л.с.)](*<-lang_ru;;*);
+			[2.0 LWB L2H3 MT (115 л.с.)](*<-lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [10.8 л];
+	=>nrel_speed: [152 км/ч];
+	=>nrel_racing: [18.4 c];
+	=>nrel_torque: [170 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [4];
+	=>transmission: [5x mechanic];;

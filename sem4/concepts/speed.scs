@@ -1,0 +1,63 @@
+speed
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [скорость](* <-lang_ru;; *);
+        [speed](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [100 км/ч](*<- lang_ru;;*);
+            [100 km/h](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (скорость)] (* <- lang_ru;; *);
+            [Def. (speed)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [скорость - векторная физическая величина, характеризующая быстроту перемещения и направление движения материальной точки относительно выбранной системы отсчёта.](*<- lang_ru;;*);
+                [speed is a vector physical quantity characterizing the speed of movement and the direction of movement of the material point relative to the selected reference system.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->quanity;;
+            ->speed_of_movement;;
+            ->direction_of_movement;;
+			->material_point;;
+			->reference_system;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        speed;
+		term;
+		science;
+		meaning;
+		size
+    };;
+    => nrel_main_idtf: 
+        [Утв.(скорость, термин, наука, смысл, велечина)] (* <- lang_ru;; *);
+        [Expl.(speed, term, science, meaning, size)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Термин скорость используют в науке и в широком смысле, понимая под ним быстроту изменения какой-либо величины в зависимости от другой.](*<- lang_ru;;*);
+            [The term speed is used in science and in a broad sense, meaning by it the speed of change of a quantity depending on another.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    positive;
+	negative
+};;

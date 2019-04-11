@@ -1,0 +1,10 @@
+nrel_number_of_valves_per_cylinder
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+	=> nrel_main_idtf:
+		[колличество клапанов на цилиндр*](*<-lang_ru;;*);
+		[number of valves per cylinder*](*<-lang_en;;*);;

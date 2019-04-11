@@ -1,0 +1,17 @@
+8s_2.0_TFSI_quattro_S_tronic_230
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[2.0 TFSI quattro S tronic (230 л.с.)](*<-lang_ru;;*);
+			[2.0 TFSI quattro S tronic (230 HP)](*<- lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [6.5 л];
+	=>nrel_speed: [250 км/ч];
+	=>nrel_racing: [5.3 c];
+	=>nrel_torque: [370 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [4];
+	=>transmission: [6x robot];;

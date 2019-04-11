@@ -1,0 +1,63 @@
+passenger
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [пассажир](* <-lang_ru;; *);
+        [passenger](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [человек](*<- lang_ru;;*);
+            [human](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (пассажир)] (* <- lang_ru;; *);
+            [Def. (passenger)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Пассажир -  человек, который не является членом экипажа и который перевозится транспортным средством в соответствии с гласным или негласным договором перевозки.](*<- lang_ru;;*);
+                [A passenger is a person who is not a member of the crew and who is transported by a vehicle in accordance with a public or private agreement of carriage.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->human;;
+            ->vehicle;;
+            ->contract;;
+			->crew;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        passenger;
+        law;
+		child;
+		hand_luggage;
+		animals
+    };;
+    => nrel_main_idtf: 
+        [Утв.(пассажир, право, ребёнок, ручная кладь, животные)] (* <- lang_ru;; *);
+        [Expl.(passenger, law, child, hand luggage, animals)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Пассажир имеет право бесплатно перевозить с собой детей, ручную кладь в пределах установленных норм и мелких животных.](*<- lang_ru;;*);
+            [The passenger has the right to carry children with him free of charge, hand luggage within the established norms and small animals.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    man;
+	woman;
+	kind
+};;

@@ -1,0 +1,33 @@
+transporter_t4
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[Transporter T4](*<-lang_ru; lang_en;;*);
+	=>nrel_idtf:
+			[T4](*<-lang_ru; lang_en;;*);
+	
+	
+	<-car;
+	
+	=> nrel_brand: Volkswagen;
+	=> nrel_manufacturer: VAG;
+	=> nrel_carcas: minibus;
+	=> nrel_weight: [1695 kg];
+	=> nrel_engine: t4_2.0_MT_84;
+					t4_2.5_Syncro_MT_110;
+					t4_1.9_D_L_MT_60;
+					t4_1.8_L_MT_67;
+					t4_2.4_D_L_MT_78;
+					t4_1.9_TD_L_MT_68;
+					t4_2.5_MT_115;
+					t4_2.5_MT_110;
+					t4_2.5_Syncro_MT_115;
+					t4_2.5_TDI_L_MT_102;
+					t4_2.5_TDI_Syncro_MT_102;
+	=> nrel_period_of_sales: ...
+	(*
+			<-period_of_time;;
+			->rrel_beginning_of_sales: 1990;;
+			->rrel_ending_of_sales: 2003;;
+	*);
+	=> nrel_carrying: [1105 kg];;

@@ -1,0 +1,17 @@
+t4_2.0_MT_84
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[2.0 MT (84 л.с.)](*<-lang_ru;;*);
+			[2.0 MT (84 HP)](*<- lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [11 л];
+	=>nrel_speed: [144 км/ч];
+	=>nrel_racing: [21.7 c];
+	=>nrel_torque: [159 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [2];
+	=>transmission: [5x mechanic];;

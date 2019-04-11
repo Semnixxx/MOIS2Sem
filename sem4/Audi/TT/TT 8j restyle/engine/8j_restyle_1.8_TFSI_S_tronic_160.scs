@@ -1,0 +1,17 @@
+8j_restyle_1.8_TFSI_S_tronic_160
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[1.8 restyle TFSI S tronic (160 л.с.)](*<-lang_ru;;*);
+			[1.8 restyle TFSI S tronic (160 HP)](*<- lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [6.4 л];
+	=>nrel_speed: [226 км/ч];
+	=>nrel_racing: [7.2 c];
+	=>nrel_torque: [250 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [4];
+	=>transmission: [7x robot];;

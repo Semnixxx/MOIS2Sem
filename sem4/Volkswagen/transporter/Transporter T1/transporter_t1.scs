@@ -1,0 +1,29 @@
+transporter_t1
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[Transporter T1](*<-lang_ru; lang_en;;*);
+	=>nrel_idtf:
+			[T1](*<-lang_ru; lang_en;;*);
+	
+	
+	<-car;
+	
+	=> nrel_brand: Volkswagen;
+	=> nrel_manufacturer: VAG;
+	=> nrel_carcas: minibus;
+	=> nrel_weight: [1140 kg];
+	=> nrel_engine: 
+					t1_1.1_MT_25;
+					t1_1.2_MT_30;
+					t1_1.2_MT_34;
+					t1_1.5_MT_42;
+					t1_1.5_MT_44;
+	=> nrel_carrying: [900 kg];
+	=> nrel_period_of_sales: ...
+	(*
+			<-period_of_time;;
+			->rrel_beginning_of_sales: 1950;;
+			->rrel_ending_of_sales: 1967;;
+	*);
+	=> nrel_release_year: [1950];;

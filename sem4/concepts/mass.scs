@@ -1,0 +1,60 @@
+mass
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [масса](* <-lang_ru;; *);
+        [mass](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [80 кг](*<- lang_ru;;*);
+            [80 kg](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (масса)] (* <- lang_ru;; *);
+            [Def. (mass)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Масса — скалярная физическая величина, определяющая инерционные и гравитационные свойства тел в ситуациях, когда их скорость намного меньше скорости света.](*<- lang_ru;;*);
+                [Mass is a scalar physical quantity that determines the inertial and gravitational properties of bodies in situations where their speed is much less than the speed of light.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->quantity;;
+            ->body;;
+            ->speed;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        mass;
+		magnitude;
+		nonrelativistic_expression;
+		law
+    };;
+    => nrel_main_idtf: 
+        [Утв.(масса, величина, нерелятивистское выражение, закон)] (* <- lang_ru;; *);
+        [Expl.(mass, magnitude, nonrelativistic expression, law)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Величина массы входит в нерелятивистское выражение второго закона Ньютона.](*<- lang_ru;;*);
+            [The magnitude of the mass is included in the non-relativistic expression of Newton's second law.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    inert;
+	gravitational
+};;

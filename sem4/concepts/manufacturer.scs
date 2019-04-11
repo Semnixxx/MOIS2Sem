@@ -1,0 +1,60 @@
+manufacturer
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+[производитель](* <-lang_ru;; *);
+[manufacturer](* <-lang_en;; *);
+-> rrel_example: ...
+(*
+    => nrel_main_idtf: 
+	[фольксваген](*<- lang_ru;;*);
+	[volkswagen](*<-lang_en;;*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf: 
+        [Опр. (производитель)] (* <- lang_ru;; *);
+        [Def. (manufacturer)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [производитель -  тип поставщика, характеризующийся тем, что он занят непосредственно изготовлением продукции, которая при условии востребованности потребителем может стать товаром.](*<- lang_ru;;*);;
+	-> rrel_example:
+            [manufacturer - a type of supplier, characterized by the fact that he is engaged directly in the manufacture of products, which, subject to demand by the consumer, can become a commodity.](*<- lang_en;;*);;
+    *);;
+    <= nrel_using_constants: ...
+    (*
+        -> provider;;
+        -> product;;
+    *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        manufacturer;
+		company;
+        person
+    };;
+    => nrel_main_idtf: 
+        [Утв.(производитель, компания, человек)] (* <- lang_ru;; *);
+        [Expl.(manufacturer, company, person)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Производителем может быть как компания так и отдельный человек.](*<- lang_ru;;*);
+            [The manufacturer can be both a company and an individual.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    legal;
+    illegal
+};
+<=nrel_subdividing:
+{
+	company;
+	person
+};;

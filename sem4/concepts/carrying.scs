@@ -1,0 +1,51 @@
+carrying
+    <-sc_node_not_relation;
+    => nrel_main_idtf:
+        [грузоподъёмность](*<-lang_ru;; *);
+        [carrying](*<-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [грузоподъёмность](*<- lang_ru;;*);
+            [carrying](*<- lang_en;;*);;
+    *);
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (грузоподъёмность)] (*<- lang_ru;; *);
+            [Def. (carrying)] (*<- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Грузоподъёмность транспортного средства — масса груза, на перевозку которого рассчитано данное транспортное средство.](*<- lang_ru;;*);
+                [Сarrying capacity of the vehicle — the weight of the cargo for the transportation of which this vehicle is designed](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->carrying;;
+            ->vehicle;;
+            ->weight;;
+			->cargo;;
+        *);;
+    *);
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        carrying;
+		characteristics;
+		vehicle
+    };;
+    => nrel_main_idtf: 
+        [Утв.(грузоподъёмность, характеристика, транспортное средство)] (*<- lang_ru;; *);
+        [Expl.(carrying, characteristics, vehicle)] (*<- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Грузоподъёмность - основная эксплуатационная характеристика транспортного средства.](*<- lang_ru;;*);
+            [Сarrying - the main operational characteristics of the vehicle.](*<- lang_en;;*);;
+    *);;
+*);;

@@ -1,0 +1,70 @@
+project
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [проект](* <-lang_ru;; *);
+        [project](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [проект скорпио](*<- lang_ru;;*);
+            [project scorpio](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (проект)] (* <- lang_ru;; *);
+            [Def. (project)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [проект - целостная совокупность моделей, свойств или характеристик, описанных в форме, пригодной для реализации системы.](*<- lang_ru;;*);
+                [a project is an integral set of models, properties or characteristics described in a form suitable for the implementation of the system.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->model;;
+            ->properties;;
+            ->characteristics;;
+			->system;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        project;
+		design;
+		architecture;
+		component;
+		interface;
+		characteristic;
+		system
+    };;
+    => nrel_main_idtf: 
+        [Утв.(проект, проектирование, архетиктура, компонент, интерфейс, характеристика, система)] (* <- lang_ru;; *);
+        [Expl.(project, design, architecture, component, interface, characteristic, system)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [проект - является результатом проектирования — процесса определения архитектуры, компонентов, интерфейсов и других характеристик системы или её части.](*<- lang_ru;;*);
+            [the project - is the result of design - the process of determining the architecture, components, interfaces and other characteristics of the system or its part.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    performed;
+    unfulfilled
+};
+
+<=nrel_subdividing:
+{
+	theoretical;
+	practical
+};;

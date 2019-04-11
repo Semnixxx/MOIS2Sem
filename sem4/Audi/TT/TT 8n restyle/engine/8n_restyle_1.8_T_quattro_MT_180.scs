@@ -1,0 +1,17 @@
+8n_restyle_1.8_T_quattro_MT_180
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[1.8 restyle T quattro MT (180 л.с.)](*<-lang_ru;;*);
+			[1.8 restyle T quattro MT (180 HP)](*<- lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [9.4 л];
+	=>nrel_speed: [226 км/ч];
+	=>nrel_racing: [7.9 c];
+	=>nrel_torque: [235 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [5];
+	=>transmission: [6x mechanic];;

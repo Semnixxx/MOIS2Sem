@@ -1,0 +1,60 @@
+model
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [модель](* <-lang_ru;; *);
+        [model](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [модель двигателя](*<- lang_ru;;*);
+            [engine model](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (модель)] (* <- lang_ru;; *);
+            [Def. (model)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [модель - это система, исследование которой служит средством для получения информации о другой системе.](*<- lang_ru;;*);
+                [A model is a system, the study of which serves as a means to obtain information about another system.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->system;;
+            ->service;;
+            ->information;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        model;
+		reality;
+		form
+    };;
+    => nrel_main_idtf: 
+        [Утв.(можель, реальность, форма)] (* <- lang_ru;; *);
+        [Expl.(model, reality, form)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Модель есть абстрактное представление реальности в какой-либо форме.](*<- lang_ru;;*);
+            [A model is an abstract representation of reality in some form.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    heuristic;
+	natural;
+	mathematical
+};;

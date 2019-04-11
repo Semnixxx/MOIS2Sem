@@ -1,0 +1,62 @@
+construction
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [конструкция](* <-lang_ru;; *);
+        [сonstruction](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf:
+            [вставная конструкция](*<- lang_ru;;*);
+            [plug-in construction](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Опр. (конструкция)] (* <- lang_ru;; *);
+            [Def. (сonstruction)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example:
+                [Конструкция — строение, устройство, взаимное расположение частей какого-либо предмета.](*<- lang_ru;;*);
+                [Construction - the structure, the device, the relative position of the parts of an object.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->structure;;
+            ->device;;
+            ->part;;
+			->object;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        construction;
+		object;
+		part
+
+    };;
+    => nrel_main_idtf:
+        [Утв.(конструкция, объект, часть)] (* <- lang_ru;; *);
+        [Expl.(construction, object, part)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example:
+            [Конструкция — сложный объект, составленный из различных частей.](*<- lang_ru;;*);
+            [A сonstruction is a complex object composed of various parts.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    monolithic;
+	plug_in;
+	flexible
+};;

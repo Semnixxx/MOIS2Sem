@@ -1,0 +1,16 @@
+audi_tt
+
+<-sc_node_not_relation;
+
+		=> nrel_main_idtf:
+				[Audi TT](*<-lang_en; lang_ru;;*);
+				
+				
+		<-generations;
+		
+		=>nrel_series:
+			tt_8n;
+			tt_8n_restyle;
+			tt_8j;
+			tt_8j_restyle;
+			tt_8s;;

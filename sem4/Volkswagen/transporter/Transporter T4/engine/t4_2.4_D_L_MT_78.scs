@@ -1,0 +1,17 @@
+t4_2.4_D_L_MT_78
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[2.4 D L MT (78 л.с.)](*<-lang_ru;;*);
+			[1.4 D L MT (78 HP)](*<- lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [8.7 л];
+	=>nrel_speed: [140 км/ч];
+	=>nrel_racing: [24.3 c];
+	=>nrel_torque: [164 Н*м];
+	=>nrel_gas: [дизель];
+	=>nrel_cylindr: [5];
+	=>nrel_number_of_valves_per_cylinder: [2];
+	=>transmission: [5x mechanic];;

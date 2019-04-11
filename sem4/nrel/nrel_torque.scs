@@ -1,0 +1,10 @@
+nrel_torque
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+	=> nrel_main_idtf:
+		[крутящий момент*](*<-lang_ru;;*);
+		[torque*](*<-lang_en;;*);;

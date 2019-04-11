@@ -1,0 +1,72 @@
+security
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [безопасность](* <-lang_ru;; *);
+        [security](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [подушка безопасности](*<- lang_ru;;*);
+            [airbag](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (безопасноть)] (* <- lang_ru;; *);
+            [Def. (security)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Безопасность — состояние защищённости жизненно важных интересов личности, общества, государства от внутренних и внешних угроз, либо способность предмета, явления или процесса сохраняться при разрушающих воздействиях.](*<- lang_ru;;*);
+                [Security is the state of protection of the vital interests of an individual, society, or the state from internal and external threats, or the ability of an object, phenomenon, or process to remain under destructive influences.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->state;;
+            ->interest;;
+            ->individ;;
+			->society;;
+			->threat;;
+			->object;;
+			->phenomenon;;
+			->process;;
+			->influence;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        safety;
+		condition;
+		system;
+		factor;
+		process;
+		needs;
+		knowledge;
+		representations
+    };;
+    => nrel_main_idtf: 
+        [Утв.(безопасность, условие, система, фактор, процесс, потребности, знания, представления)] (* <- lang_ru;; *);
+        [Expl.(safety, condition, system, factor, process, needs, knowledge, representations)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Безопасность — это такие условия, в которых находится сложная система, когда действие внешних и внутренних факторов не приводит к процессам, которые считаются негативными по отношению к данной сложной системы в соответствии с имеющимися на данном этапе потребностям, знаниям и представлениям.](*<- lang_ru;;*);
+            [Security is the conditions in which a complex system is located, when the action of external and internal factors does not lead to processes that are considered negative in relation to this complex system in accordance with the needs, knowledge and ideas that are present at the given stage.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+	moral;
+	psychological;
+	informational;
+	physical
+};;

@@ -1,0 +1,17 @@
+t4_2.5_Syncro_MT_110
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[2.5 Syncro MT (110 л.с.)](*<-lang_ru;;*);
+			[2.5 Syncro MT (110 HP)](*<- lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [7.7 л];
+	=>nrel_speed: [150 км/ч];
+	=>nrel_racing: [19 c];
+	=>nrel_torque: [190 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [5];
+	=>nrel_number_of_valves_per_cylinder: [2];
+	=>transmission: [5x mechanic];;

@@ -1,0 +1,17 @@
+t6_2.0_TSI_DSG_L2H1_204
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[2.0 TSI DSG L2H1 (204 л.с.)](*<-lang_en;;*);
+			[2.0 TSI DSG L2H1 (204 л.с.)](*<-lang_ru;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [9.8 л];
+	=>nrel_speed: [194 км/ч];
+	=>nrel_racing: [8.8 c];
+	=>nrel_torque: [350 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [4];
+	=>transmission: [7x robot];;

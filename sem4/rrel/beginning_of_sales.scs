@@ -1,0 +1,9 @@
+rrel_beginning_of_sales
+
+	<-sc_node_role_relation;
+
+	<-oriented_relation;
+
+	=> nrel_main_idtf:
+		[начало продаж*](* <-lang_ru;; *);
+		[beginning of sales*](* <-lang_en;; *);;

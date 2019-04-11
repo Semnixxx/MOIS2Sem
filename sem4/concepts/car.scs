@@ -1,0 +1,53 @@
+car
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (автомобиль)] (*<- lang_ru;; *);
+            [Def. (car)] (*<- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Автомобиль - моторное дорожное транспортное средство, используемое для перевозки людей или грузов.](*<- lang_ru;;*);
+                [A car is a motorized road vehicle used to transport people or goods.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->vehicle;;
+            ->people;;
+            ->cargo;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        car;
+        wheel
+    };;
+    => nrel_main_idtf: 
+        [Утв.(автомобиль, колесо)] (*<- lang_ru;; *);
+        [Expl.(car, wheel)] (*<- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Автомобиль имеет колёса](*<- lang_ru;;*);
+            [The car has wheels](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    passengers;
+    cargo;
+	special
+};
+
+<=nrel_subdividing:
+{
+	gas_engine;
+	diesel_engine;
+	electro_engine
+};;

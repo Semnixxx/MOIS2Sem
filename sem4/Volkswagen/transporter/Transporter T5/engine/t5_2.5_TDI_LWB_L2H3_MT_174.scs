@@ -1,0 +1,17 @@
+t5_2.5_TDI_LWB_L2H3_MT_174
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[2.5 TDI LWB L2H3 MT (174 л.с.)](*<-lang_ru;;*);
+			[2.5 TDI LWB L2H3 MT (174 л.с.)](*<-lang_en;;*);
+			
+	<-engine;
+	
+	=>nrel_fuel_consumption: [9.9 л];
+	=>nrel_speed: [169 км/ч];
+	=>nrel_racing: [12.7 c];
+	=>nrel_torque: [400 Н*м];
+	=>nrel_gas: [дизель];
+	=>nrel_cylindr: [5];
+	=>nrel_number_of_valves_per_cylinder: [2];
+	=>transmission: [5x mechanic];;

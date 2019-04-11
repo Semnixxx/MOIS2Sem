@@ -1,0 +1,30 @@
+transporter_t5
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[Transporter T5](*<-lang_ru; lang_en;;*);
+	=>nrel_idtf:
+			[T5](*<-lang_ru; lang_en;;*);
+	
+	
+	<-car;
+	
+	=> nrel_brand: Volkswagen;
+	=> nrel_manufacturer: VAG;
+	=> nrel_carcas: minibus;
+	=> nrel_weight: [1615 kg];
+	=> nrel_engine: t5_2.5_TDI_LWB_L2H1_MT_131;
+					t5_2.0_LWB_L2H3_MT_115;
+					t5_2.5_TDI_SWB_L1H1_4motion_MT_131;
+					t5_3.2_V6_LWB_L2H1_AT_235;
+					t5_3.2_AT_4motion_L1H1_SWB_235;
+					t5_1.9_TDI_LWB_L2H1_MT_102;
+					t5_1.9_TDI_SWB_L1H1_MT_84;
+					t5_2.5_TDI_LWB_L2H3_MT_174;
+	=> nrel_period_of_sales: ...
+	(*
+			<-period_of_time;;
+			->rrel_beginning_of_sales: 2003;;
+			->rrel_ending_of_sales: 2009;;
+	*);
+	=> nrel_carrying: [1185 kg];;

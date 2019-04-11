@@ -1,0 +1,55 @@
+engine
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (двигатель)] (* <- lang_ru;; *);
+            [Def. (engine)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Двигатель — устройство, преобразующее какой-либо вид энергии в механическую работу.](*<- lang_ru;;*);
+                [An engine is a device that converts any kind of energy into mechanical work.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->device;;
+            ->energy;;
+            ->mechanic_work;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        engine;
+		natural_resources;
+		mechanical_work;
+		energy;
+		source
+    };;
+    => nrel_main_idtf: 
+        [Утв.(двигвтель, природные ресурсы, механическая работа, энергия, источник)] (* <- lang_ru;; *);
+        [Expl.(engine, natural resources, mechanical work, energy, source)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [К первичным двигателям относят непосредственно преобразующие природные энергетические ресурсы в механическую работу, а ко вторичным двигателям — преобразующие энергию, выработанную или накопленную другими источниками.](*<- lang_ru;;*);
+            [The primary engines include directly converting natural energy resources into mechanical work, and the secondary engines - converting energy generated or accumulated by other sources.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subviding:
+{
+	primary;
+	secondary
+};
+
+<=nrel_subdividing:
+{
+	gas;
+	diesel;
+	electro
+};;

@@ -1,0 +1,17 @@
+8n_3.2_quattro_MT_250
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[3.2 quattro MT (250 л.с.)](*<-lang_ru;;*);
+			[3.2 quattro MT (250 HP)](*<- lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [9.8 л];
+	=>nrel_speed: [254 км/ч];
+	=>nrel_racing: [6.5 c];
+	=>nrel_torque: [320 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [6];
+	=>nrel_number_of_valves_per_cylinder: [4];
+	=>transmission: [6x mechanic];;

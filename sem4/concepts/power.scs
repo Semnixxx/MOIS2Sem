@@ -1,0 +1,59 @@
+power
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [мощность](* <-lang_ru;; *);
+        [power](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [200 Вт](*<- lang_ru;;*);
+            [200 W](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (мощность)] (* <- lang_ru;; *);
+            [Def. (power)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Мощность — скалярная физическая величина, равная в общем случае скорости изменения, преобразования, передачи или потребления энергии системы.](*<- lang_ru;;*);
+                [Power is a scalar physical quantity equal in the general case to the rate of change, transformation, transfer or consumption of the energy of a system.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->quanity;;
+            ->energy;;
+            ->system;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        power;
+		unit
+    };;
+    => nrel_main_idtf: 
+        [Утв.(мощность, единица измерения)] (* <- lang_ru;; *);
+        [Expl.(power, unit)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Основная единица измерения мощности — ватт (Вт).](*<- lang_ru;;*);
+            [The basic unit of power is watts (W).](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    hydraulic;
+	electrical;
+	mechanics
+};;

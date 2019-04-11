@@ -1,0 +1,24 @@
+transporter_t3
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[Transporter T3](*<-lang_ru; lang_en;;*);
+	=>nrel_idtf:
+			[T3](*<-lang_ru; lang_en;;*);
+	
+	
+	<-car;
+	
+	=> nrel_brand: Volkswagen;
+	=> nrel_manufacturer: VAG;
+	=> nrel_carcas: minibus;
+	=> nrel_weight: [1360 kg];
+	=> nrel_engine: t3_1.6_MT_50;
+					t3_2.0_MT_70;
+	=> nrel_period_of_sales: ...
+	(*
+			<-period_of_time;;
+			->rrel_beginning_of_sales: 1979;;
+			->rrel_ending_of_sales: 1982;;
+	*);
+	=> nrel_carrying: [870 kg];;

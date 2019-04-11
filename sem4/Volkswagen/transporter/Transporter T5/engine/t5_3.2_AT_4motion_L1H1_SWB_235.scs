@@ -1,0 +1,17 @@
+t5_3.2_AT_4motion_L1H1_SWB_235
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[3.2 AT 4motion L1H1 SWB(110 л.с.)](*<-lang_en;;*);
+			[3.2 AT 4motion L1H1 SWB(110 л.с.)](*<-lang_ru;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [13.3 л];
+	=>nrel_speed: [206 км/ч];
+	=>nrel_racing: [10.6 c];
+	=>nrel_torque: [315 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [6];
+	=>nrel_number_of_valves_per_cylinder: [4];
+	=>transmission: [5x automatic];;

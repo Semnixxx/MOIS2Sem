@@ -1,0 +1,67 @@
+market
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [рынок](* <-lang_ru;; *);
+        [market](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [экспобел](*<- lang_ru;;*);
+            [expobel](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (рынок)] (* <- lang_ru;; *);
+            [Def. (market)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Рынок — совокупность процессов и процедур, обеспечивающих обмен между покупателями и продавцами товаров и услуг.](*<- lang_ru;;*);
+                [Market - a set of processes and procedures that ensure the exchange between buyers and sellers of goods and services.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->process;;
+            ->set;;
+            ->procedure;;
+			->exchange;;
+			->buyer;;
+			->seller;;
+			->product;;
+			->services;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        market;
+		criterion;
+		participant;
+		freedom;
+		competition
+    };;
+    => nrel_main_idtf: 
+        [Утв.(рынок, критерий, участник, свобода, конкуренция)] (* <- lang_ru;; *);
+        [Expl.(market, criterion, participant, freedom, competition)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Одним из главных критериев рынка является свобода действий участников, что обеспечивает наличие конкуренции.](*<- lang_ru;;*);
+            [One of the main criteria of the market is the freedom of action of the participants, which ensures the presence of competition.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subviding:
+{
+	closed;
+	open;
+	free
+};;

@@ -1,0 +1,17 @@
+8j_2.0_TDI_MT_170
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[2.0 TDI MT (170 л.с.)](*<-lang_ru;;*);
+			[2.0 TDI MT (170 HP)](*<- lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [5.3 л];
+	=>nrel_speed: [226 км/ч];
+	=>nrel_racing: [7.5 c];
+	=>nrel_torque: [350 Н*м];
+	=>nrel_gas: [дизель];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [4];
+	=>transmission: [6x mechanic];;

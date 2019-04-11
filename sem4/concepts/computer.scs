@@ -1,0 +1,63 @@
+computer
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [компьютер](* <-lang_ru;; *);
+        [computer](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [бортовой компьютер](*<- lang_ru;;*);
+            [on-board computer](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (компьютер)] (* <- lang_ru;; *);
+            [Def. (computer)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [компьюер - устройство или система, способная выполнять заданную, чётко определённую, изменяемую последовательность операций.](*<- lang_ru;;*);
+                [A computer is a device or system capable of performing a given, clearly defined, mutable sequence of operations.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->device;;
+            ->system;;
+            ->opertaion;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        computer;
+		size;
+		space;
+		room
+    };;
+    => nrel_main_idtf: 
+        [Утв.(компьюер, величина, пространство, комната)] (* <- lang_ru;; *);
+        [Expl.(computer, size, space, room)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [ранние компьютеры занимали пространство величиной в целую комнату.](*<- lang_ru;;*);
+            [early computers occupied space the size of a whole room.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    personal_computer;
+	on_board_computer;
+	stationary_computer;
+	laptop;
+	smartphone
+};;

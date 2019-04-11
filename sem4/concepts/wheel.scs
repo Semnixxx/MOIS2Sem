@@ -1,0 +1,64 @@
+wheel
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [двигатель](* <-lang_ru;; *);
+        [engine](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [колесо телеги](*<- lang_ru;;*);
+            [cartwheel](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (колесо)] (* <- lang_ru;; *);
+            [Def. (wheel)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Колесо — движитель, свободно вращающийся или закреплённый на вращающейся оси диск, позволяющий поставленному на него телу катиться, а не скользить.](*<- lang_ru;;*);
+                [A propeller wheel, a disk freely rotating or fixed on a rotating axis, allowing the body placed on it to roll rather than slide.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->disk;;
+            ->axis;;
+            ->body;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        wheel;
+		load;
+		mechanism;
+		tool
+    };;
+    => nrel_main_idtf: 
+        [Утв.(колесо, груз, механизм, инструмент)] (* <- lang_ru;; *);
+        [Expl.(wheel, load, mechanism, tool)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Колесо широко применяется для транспортировки грузов, повсеместно используется в различных механизмах и инструментах.](*<- lang_ru;;*);
+            [The wheel is widely used for transporting goods, is commonly used in various mechanisms and tools.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    elliptical_wheel;
+    square_wheel;
+	rotary_milling_propeller;
+	walking_wheel;
+	motor_wheel;
+	rennes_wheel
+};;

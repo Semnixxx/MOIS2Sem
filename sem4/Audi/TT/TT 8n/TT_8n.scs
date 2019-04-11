@@ -1,0 +1,27 @@
+tt_8n
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[TT 8n](*<-lang_ru; lang_en;;*);
+	<-car;
+	
+	=> nrel_brand: Audi;
+	=> nrel_manufacturer: VAG;
+	=> nrel_carcas:
+					coupe;
+					roadster;
+	=> nrel_weight: [1490 kg];
+	=> nrel_engine: 8n_1.8_T_AT_180;
+					8n_1.8_T_quattro_MT_180;
+					8n_1.8_T_MT_180;
+					8n_1.8_T_MT_150;
+					8n_1.8_T_quattro_MT_225;
+					8n_3.2_quattro_MT_250;
+					8n_3.2_quattro_S_tronic_250;
+	=> nrel_period_of_sales: ...
+	(*
+			<-period_of_time;;
+			->rrel_beginning_of_sales: 1998;;
+			->rrel_ending_of_sales: 2003;;
+	*);
+	=> nrel_carrying: [385 kg];;

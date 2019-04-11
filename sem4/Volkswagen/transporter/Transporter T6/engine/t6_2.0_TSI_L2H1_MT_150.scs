@@ -1,0 +1,17 @@
+t6_2.0_TSI_L2H1_MT_150
+	<-sc_node_not_relation;
+	
+	=>nrel_main_idtf:
+			[2.0 TDI TSI L2H1 MT (150 л.с.)](*<-lang_ru;;*);
+			[2.0 TDI TSI L2H1 MT (150 л.с.)](*<-lang_en;;*);
+	
+	<-engine;
+	
+	=>nrel_fuel_consumption: [9.6 л];
+	=>nrel_speed: [174 км/ч];
+	=>nrel_racing: [11.6 c];
+	=>nrel_torque: [280 Н*м];
+	=>nrel_gas: [бензин];
+	=>nrel_cylindr: [4];
+	=>nrel_number_of_valves_per_cylinder: [4];
+	=>transmission: [6x mechanic];;

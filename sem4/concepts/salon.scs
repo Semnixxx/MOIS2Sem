@@ -1,0 +1,70 @@
+salon
+    <-sc_node_not_relation;
+
+    => nrel_main_idtf:
+        [салон](* <-lang_ru;; *);
+        [salon](* <-lang_en;; *);
+
+    -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [кожанный салон](*<- lang_ru;;*);
+            [leather salon](*<- lang_en;;*);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+        => nrel_main_idtf: 
+            [Опр. (салон)] (* <- lang_ru;; *);
+            [Def. (salon)] (* <- lang_en;; *);;
+        <= nrel_sc_text_translation: ...
+        (*
+            -> rrel_example: 
+                [Салон — основное внутреннее пространство автомобиля, предназначенное для размещения либо только пассажиров, либо пассажиров и водителя автомобиля.](*<- lang_ru;;*);
+                [Salon - the main interior space of the car, designed to accommodate either only passengers or passengers and the driver of the car.](*<- lang_en;;*);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            ->car;;
+            ->passenger;;
+            ->driver;;
+        *);;
+    *);
+
+  <- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        salon;
+		controls;
+		car;
+		trim;
+		handrails;
+		small_items
+    };;
+    => nrel_main_idtf: 
+        [Утв.(салон, органы управления, автомобиль, отделка, поручни, мелкие предметы)] (* <- lang_ru;; *);
+        [Expl.(salon, controls, car, trim, handrails, small items)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Салон включает в себя органы управления автомобилем, сиденья, внутреннюю декоротивную отделку, поручни, элементы пассивной безопасности, отсеки для хранения мелких предметов, солнцезащитные шторки и козырьки.](*<- lang_ru;;*);
+            [The salon includes car controls, seats, interior decoration, handrails, passive safety features, storage compartments for small items, sun blinds and visors.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    leather_salon;
+	fabric_salon
+};
+
+<=nrel_subdividing:
+{
+	sport;
+	classic;
+	retro;
+	expensive
+};;

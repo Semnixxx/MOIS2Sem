@@ -1,0 +1,59 @@
+transmission
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+[трансмиссия](* <-lang_ru;; *);
+[transmission](* <-lang_en;; *);
+-> rrel_example: ...
+(*
+    => nrel_main_idtf: 
+	[механическая трансмиссия](*<- lang_ru;;*);
+	[mechanical transmission](*<-lang_en;;*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+    <- definition;;
+    => nrel_main_idtf: 
+        [Опр. (трансмиссия)] (* <- lang_ru;; *);
+        [Def. (transmission)] (* <- lang_en;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [трансмиссия - в машиностроении совокупность сборочных единиц и механизмов, соединяющих двигатель (мотор) с ведущими колёсами транспортного средства (автомобиля) или рабочим органом станка, а также системы, обеспечивающие работу трансмиссии.](*<- lang_ru;;*);;
+	-> rrel_example:
+            [transmission - in mechanical engineering a set of assembly units and mechanisms connecting the engine (motor) with the driving wheels of a vehicle (car) or the working body of the machine, as well as systems ensuring the operation of the transmission.](*<- lang_en;;*);;
+    *);;
+    <= nrel_using_constants: ...
+    (*
+        -> mechanism;;
+        -> engine;;
+		-> wheel;;
+		-> vehivle;;
+		-> car;;
+		-> machine;;
+    *);;
+*);
+<- rrel_key_sc_element: ...
+(*
+    <- explanation;;
+    -> rrel_key_sc_element:
+    {
+        transmission
+    };;
+    => nrel_main_idtf: 
+        [Утв.(трансмиссия)] (* <- lang_ru;; *);
+        [Expl.(transmission)] (* <- lang_eng;; *);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [Трансмиссии делятся на механические, автомотическа, роботизированная и вариатор.](*<- lang_ru;;*);
+            [Transmissions are divided into mechanical, automatic, robotic and variator.](*<- lang_en;;*);;
+    *);;
+*);
+
+<=nrel_subdividing:
+{
+    mechanical;
+	automatical;
+	robotic;
+	variator
+};;
